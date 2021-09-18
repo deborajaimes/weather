@@ -1,0 +1,178 @@
+*{  box-sizing: border-box ;
+    background: var(--cinzaEscuro);
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+:root{
+    --branco: #f1f5f8;
+    --gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+    --cinzaEscuro:#343d4b;
+    --preto: #00000040;
+    --midnightBlue: #191970;
+    }
+
+
+.container{
+    width: 100%;
+    height: auto;
+    background: var(--branco);
+    margin: 30px 400px;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: var(--branco);
+}
+
+.container input {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-bottom-right-radius: 15px 3px;
+    border-bottom-left-radius:3px 15px;
+    border: solid 3px transparent;
+    border-bottom: groove 3px var(--branco);
+    font-size: 1rem;
+    color: var(--branco);
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#btnVerificarTemperatura{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--midnightBlue);
+    font-weight:bold;
+    background-image:var(--gradient);
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    border-radius: .4rem;
+    
+}
+
+.button:focus, .button:active{
+    transform: translateY(4px);
+    padding-bottom: 0px;
+    outline: 0;
+}
+
+#weatherResult{
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+    max-width: 1000px;
+    min-width: 250px;
+    margin-left: 10rem;
+    background: var(--cinzaEscuro);
+    background-size: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px var(--preto);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#weatherData{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--branco);
+    margin-left: 30rem;
+}
+
+
+.sunny {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+  
+  }
+  .other {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+  
+  }
+
+  #other {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+    margin-left:-25rem;
+  }
+
+  
+  .sunny:before,
+  .partly_cloudy__sun:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #f1c40f;
+    background-image: radial-gradient(#f1c40f, #f39c12);
+    box-shadow: 0 0 25px #917508;
+  }
+
+  #sunny {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+    margin-left:-25rem;
+  }
+
+    
+#temperature {
+    position: relative;
+    width: 30rem;
+    height: 5rem;
+    margin-top: 4rem;
+    margin-left:10rem;
+    font-size: 30pt;
+  }
+
+  #temperatureDescription {
+    position: relative;
+    width: 30rem;
+    height: 5rem;
+    margin-left:10rem;
+    font-size: 20pt;
+  }
+  #temperatureWind {
+    position: relative;
+    width: 30rem;
+    height: 5rem;
+    margin-left:10rem;
+    font-size: 20pt;
+  }
+  
+  
+  .partlyCloudy{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+  
+  }
+
+
+  .clear {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4rem;
+    margin-left:-25rem;
+  }
+
+  .partlyCloudy img{
+    width: 10px;
+    margin-right: 10px;
+  }
+
